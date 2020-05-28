@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!--Make the difficulty labels great again!-->
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/DifficultyDef[defName="Easy"]/label</xpath>
+                <value>
+                    <label>builder</label>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/DifficultyDef[defName="Medium"]/label</xpath>
+                <value>
+                    <label>medium</label>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/DifficultyDef[defName="Rough"]/label</xpath>
+                <value>
+                    <label>rough</label>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/DifficultyDef[defName="Hard"]/label</xpath>
+                <value>
+                    <label>savage</label>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/DifficultyDef[defName="Extreme"]/label</xpath>
+                <value>
+                    <label>merciless</label>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
+</Patch>
